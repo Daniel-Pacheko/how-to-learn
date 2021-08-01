@@ -27,6 +27,7 @@
 }
 
 .header__title {
+  margin: 0;
   max-width: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -216,12 +217,12 @@
   overflow: hidden;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   color: white;
   z-index: 2;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   color: white;
   z-index: 2;
 }
@@ -246,16 +247,19 @@
 }
 
 .footer {
+  display: flex;
   background-color: #1f1f1f;
+  min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
-  min-height: 250px;
   display: flex;
-  max-width: 90%;
-  margin: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
 }
 
@@ -264,8 +268,8 @@
 }
 
 .footer__column_content_copyright {
-  display: flex;
   flex-basis: 711px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
